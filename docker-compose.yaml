@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  etebase-web-builder:
+    image: karbon15/etebase-web-builder:latest
+    environment:
+      REACT_APP_DEFAULT_API_PATH: https://my-custom-domain.tld
+    volumes:
+      - /var/www/static/etesync-web:/output
